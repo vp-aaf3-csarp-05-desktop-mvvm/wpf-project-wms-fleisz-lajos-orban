@@ -8,6 +8,10 @@ namespace WMSProjekt
     public class EmployeeViewModel
     {
         /// <summary>
+        /// Szabadnapok száma
+        /// </summary>
+        private static int VacationDay = 45;
+        /// <summary>
         /// Dolgozó neve
         /// </summary>
         public string Name { get; } = "Nagy Anna";
@@ -19,5 +23,9 @@ namespace WMSProjekt
         /// Kivett szabadnapok száma
         /// </summary>
         public int DaysOff { get; } = 6;
+        /// <summary>
+        /// Hátralévő szabadnapok száma
+        /// </summary>
+        public int RemainingDays => VacationDay - DaysOff;
     }
 }
