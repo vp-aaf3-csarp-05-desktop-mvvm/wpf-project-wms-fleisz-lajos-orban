@@ -26,6 +26,13 @@ namespace WMSProjekt
         /// <summary>
         /// Hátralévő szabadnapok száma
         /// </summary>
-        public int RemainingDays => VacationDay - DaysOff;
+        public int RemainingDays
+        {
+            get 
+            { 
+                int eredmeny = VacationDay -  DaysOff;
+                return eredmeny;
+            }
+        }
     }
 }
