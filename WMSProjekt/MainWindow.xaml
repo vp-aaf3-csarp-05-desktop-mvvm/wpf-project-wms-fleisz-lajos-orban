@@ -22,7 +22,7 @@
                 <Label Content="Adószám" FontWeight="Bold"/>
                 <TextBlock Text="{Binding TaxNumber}" Margin="5 0 0 0"/>
                 <Label Content="Kivett szabadnapok száma" FontWeight="Bold"/>
-                <TextBlock Text="{Binding DaysOff}" Margin="5 0 0 0"/>
+                <TextBox Text="{Binding DaysOff, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5 0 0 0" HorizontalAlignment="Left"/>
                 <Label Content="Hátralévő szabadnapok száma" FontWeight="Bold"/>
                 <TextBlock Text="{Binding RemainingDays}" Margin="5 0 0 0"/>
             </StackPanel>
