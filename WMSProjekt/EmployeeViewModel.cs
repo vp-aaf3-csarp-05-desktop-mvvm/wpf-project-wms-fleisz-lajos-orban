@@ -23,7 +23,8 @@ namespace WMSProjekt
         /// <summary>
         /// Kivett szabadnapok száma
         /// </summary>
-        public int DaysOff { get; } = 8;
+        [ObservableProperty]
+        private int daysOff = 8;
         /// <summary>
         /// Hátralévő szabadnapok száma
         /// </summary>
