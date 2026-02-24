@@ -6,7 +6,7 @@ namespace WMSProjekt
     /// <summary>
     /// Dolgozó adatok megjelenítéshez (szabadnapkezelés)
     /// </summary>
-    public class EmployeeViewModel : ObservableObject
+    public partial class EmployeeViewModel : ObservableObject
     {
         /// <summary>
         /// Szabadnapok száma
