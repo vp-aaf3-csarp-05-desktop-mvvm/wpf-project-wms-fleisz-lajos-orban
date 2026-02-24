@@ -1,11 +1,12 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace WMSProjekt
 {
     /// <summary>
     /// Dolgozó adatok megjelenítéshez (szabadnapkezelés)
     /// </summary>
-    public class EmployeeViewModel
+    public class EmployeeViewModel : ObservableObject
     {
         /// <summary>
         /// Szabadnapok száma
