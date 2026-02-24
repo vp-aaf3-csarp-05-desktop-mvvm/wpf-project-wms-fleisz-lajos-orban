@@ -22,7 +22,7 @@ namespace WMSProjekt
         /// <summary>
         /// Kivett szabadnapok száma
         /// </summary>
-        public int DaysOff { get; } = 6;
+        public int DaysOff { get; } = 8;
         /// <summary>
         /// Hátralévő szabadnapok száma
         /// </summary>
