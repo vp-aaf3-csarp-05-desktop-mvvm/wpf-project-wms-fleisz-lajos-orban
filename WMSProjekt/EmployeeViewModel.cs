@@ -30,5 +30,11 @@ namespace WMSProjekt
         /// </summary>
         private int _remainingDays;
         public int RemainingDays { get => _remainingDays; }
+
+        [RelayCommand]
+        private void Calculate()
+        {
+            _remainingDays = VacationDay - DaysOff;
+        }
     }
 }
