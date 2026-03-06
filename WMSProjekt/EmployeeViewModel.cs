@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System.Security.Cryptography.X509Certificates;
 
 namespace WMSProjekt
@@ -35,6 +36,7 @@ namespace WMSProjekt
         private void Calculate()
         {
             _remainingDays = VacationDay - DaysOff;
+            OnPropertyChanged(nameof(RemainingDays));
         }
     }
 }

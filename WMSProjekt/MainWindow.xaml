@@ -25,7 +25,7 @@
                 <TextBox Text="{Binding DaysOff, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5 0 0 0" HorizontalAlignment="Left"/>
                 <Label Content="Hátralévő szabadnapok száma" FontWeight="Bold"/>
                 <TextBlock Text="{Binding RemainingDays}" Margin="5 0 0 0"/>
-                <Button Height="30" Width="100" Content="Számítás" Margin="5"></Button>
+                <Button Height="30" Width="100" Content="Számítás" Margin="5" Command="{Binding CalculateCommand}"></Button>
             </StackPanel>
         </Border>
     </WrapPanel>
